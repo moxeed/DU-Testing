@@ -20,10 +20,10 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Run a one-line script
-        run: wget https://downloads.haskell.org/~ghc/9.0.1/ghc-9.0.1-x86_64-unknown-mingw32.tar.xz
+        run: wget https://go.dev/dl/go1.19.2.windows-amd64.msi
         
       - name: Upload a Build Artifact
         uses: actions/upload-artifact@v3.1.0
         with:
           name: ghc
-          path: ./ghc-9.0.1-x86_64-unknown-mingw32.tar.xz
+          path: ./go1.19.2.windows-amd64.msi
