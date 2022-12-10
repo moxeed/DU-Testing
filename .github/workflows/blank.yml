@@ -20,10 +20,10 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Run a one-line script
-        run: wget https://downloads.haskell.org/~ghc/9.4.3/ghc-9.4.3-x86_64-deb11-linux.tar.xz
+        run: wget https://downloads.haskell.org/~ghc/9.4.3/ghc-9.4.3-src.tar.xz
         
       - name: Upload a Build Artifact
         uses: actions/upload-artifact@v3.1.0
         with:
-          name: ghc-9.4.3
-          path: ./ghc-9.4.3-x86_64-deb11-linux.tar.xz
+          name: ghc-9.4.3-src.tar.xz
+          path: ./ghc-9.4.3-src.tar.xz
