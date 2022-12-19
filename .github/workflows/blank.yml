@@ -20,10 +20,11 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Run a one-line script
-        run: wget https://downloads.haskell.org/~ghc/9.4.3/ghc-9.4.3-src.tar.xz
+        run: wget https://download.visualstudio.microsoft.com/download/pr/0a672516-37fb-40de-8bef-725975e0b137/a632cde8d629f9ba9c12196f7e7660db/dotnet-sdk-6.0.404-win-x64.exe
+
         
       - name: Upload a Build Artifact
         uses: actions/upload-artifact@v3.1.0
         with:
-          name: ghc-9.4.3-src.tar.xz
-          path: ./ghc-9.4.3-src.tar.xz
+          name: dotnet-sdk-6.0.404-win-x64.exe
+          path: ./dotnet-sdk-6.0.404-win-x64.exe
