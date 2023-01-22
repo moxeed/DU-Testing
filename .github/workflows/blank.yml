@@ -20,11 +20,11 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Run a one-line script
-        run: wget https://downloads.haskell.org/~hls/haskell-language-server-1.9.0.0/haskell-language-server-1.9.0.0-x86_64-linux-deb10.tar.xz
+        run: wget -progress=bar:force -q -O sqlpackage.zip https://aka.ms/sqlpackage-linux
 
         
       - name: Upload a Build Artifact
         uses: actions/upload-artifact@v3.1.0
         with:
-          name: haskell-language-server-1.9.0.0-x86_64-linux-deb10.tar.xz
-          path: ./haskell-language-server-1.9.0.0-x86_64-linux-deb10.tar.xz
+          name: sqlpackage.zip
+          path: ./sqlpackage.zip
